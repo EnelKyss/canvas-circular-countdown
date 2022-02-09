@@ -60,7 +60,7 @@ export default function drawCanvas(percentage, instance) {
     instance._ctx.textBaseline = 'middle';
     instance._ctx.textAlign = 'center';
 
-    let captionStr = `${ceiledPercentage}%`;
+    let captionStr = `${instance._timer.time()}`;
 
     if (typeof opts.captionText === 'string') {
       captionStr = opts.captionText;
